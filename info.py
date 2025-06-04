@@ -42,7 +42,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]  # Channel id for auto indexing (make sure bot is admin)
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002146580509'))  # Log channel id (make sure bot is admin)
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002146580509'))  # Bin channel id (make sure bot is admin)
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002146580509'))  # Notification of those who verify will be sent to your channel
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001548474615'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1001868871195'))  # Premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1001548474615')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
@@ -55,8 +55,8 @@ MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1001
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://envs.sh/Wdj.jpg')
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '@fam')
+QR_CODE = environ.get('QR_CODE', 'Dm @NatsuSenpai')
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'Dm @NatsuSenpai')
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
@@ -99,10 +99,10 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie7xchat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/nova_flix')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/kdrama_times_chat')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/kdrama_time')
 OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/NatsuSenpai')
-MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+GZ1ByTtRWQw0OGVl')
+MOVIE_UPDATE_CHANNEL_LNK = environ.get('MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/kdrama_time')
 OWNERID = int(os.environ.get('OWNERID', '1269717144'))  # Replace with the actual admin ID
 
 # ============================
@@ -120,7 +120,7 @@ MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'sʜᴀʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ ᴜs')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/codeflixsupport')  # Support group link (make sure bot is admin)
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/kdrama_times_chat')  # Support group link (make sure bot is admin)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
