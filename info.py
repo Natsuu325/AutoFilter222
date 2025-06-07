@@ -83,7 +83,7 @@ CAPTION_LANGUAGES = ["Bhojpuri", "Hindi", "Bengali", "Tamil", "English", "Bangla
 # Verification Settings
 # ============================
 VERIFY = bool(environ.get('VERIFY', True))  # Verification On (True) / Off (False)
-VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE',16))  # Add time in hours
+VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 16))  # Add time in hours
 VERIFIED_LOG = int(environ.get('VERIFIED_LOG', '-1002146580509'))  # Log channel id (make sure bot is admin)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/How_to_Download_7x/30')  # How to open tutorial link for verification
 
